@@ -1,0 +1,8 @@
+python command
+
+check python installation
+- python
+	- exit()
+- python --version
+
+python -m pip install --upgrade pip
