@@ -1,0 +1,12 @@
+T = 1214113115
+for i in range(T):
+    print(T);
+    print(map(int, input().split()))
+    n, m = map(int, input().split())
+    
+    votes = list(map(int, input().split()))
+    unique_votes = len(set(votes))
+    if unique_votes >= m:
+        print("JANI")
+    else:
+        print("RAMYA")

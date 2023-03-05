@@ -1,0 +1,17 @@
+class Solution:
+    def containsDuplicate(self, nums: List[int]) -> bool:
+        # numset = []
+        # for i in range(len(nums)):
+        #     if nums[i] in numset:
+        #         return True
+        #     else:
+        #         numset.append(nums[i]);  
+        # return False
+    
+        nums_found = set()
+        for num in nums:
+            if num in nums_found:
+                return True
+            else:
+                nums_found.add(num)
+        return False
