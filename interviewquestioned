@@ -1,0 +1,14 @@
+def printtribRec(n):
+    if(n == 0 or n == 1 or n == 2):
+        return 0
+    if(n == 3):
+        return 1;
+    else: 
+        return printtribRec(n-1) + printtribRec(n -2) + printtribRec(n-3)
+
+def printtrib(n):
+    for x in range(1, n):
+        print(printtribRec(x))
+
+
+print(printtrib(6))
